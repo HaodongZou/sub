@@ -20,3 +20,5 @@ url=ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwYXNzd29yZA@www.example.com:1080#Example
 * 修改`build.sh`中的`xxxxxx`为你的 Docker Hub namespace 。
 * 自定义`/replacements/config/Custom.ini`。
 * 执行`sh build.sh`。
+
+> 详细说明请参考[我的博客](https://www.zouhd.top/article/subconverter-docker)
