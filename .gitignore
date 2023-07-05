@@ -1,4 +1,5 @@
 replacements/profiles/*.ini
+replacements/pref.toml
 # General
 .DS_Store
 .AppleDouble
