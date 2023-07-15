@@ -6,7 +6,7 @@ builder_name="mybuilder"
 
 # 更新代码
 cd ACL4SSR
-git pull
+git pull --rebase
 git checkout master
 cd ..
 
@@ -29,7 +29,7 @@ if docker ps -a --format "{{.Names}}" | grep -q "$container_name"; then
 fi
 
 # 运行新容器
-docker run -d --restart=always --name "$container_name" -p 25500:25500 zouhaodong/subconverter-custom:latest
+# docker run -d --restart=always --name "$container_name" -p 25500:25500 zouhaodong/subconverter-custom:latest
 
 # 删除构建器容器
 docker buildx rm "$builder_name"
